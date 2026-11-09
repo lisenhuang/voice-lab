@@ -1,0 +1,33 @@
+{
+  "name": "voice-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.24.0",
+  "scripts": {
+    "dev": "next dev --webpack --hostname 127.0.0.1 --port 1455",
+    "build": "next build --webpack",
+    "start": "next start --hostname 127.0.0.1 --port 1455",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "test:browser": "playwright test"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "3.8.1",
+    "jose": "^6.1.3",
+    "kokoro-js": "1.2.1",
+    "lucide-react": "^0.468.0",
+    "next": "16.4.5",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "prettier": "^3.9.10",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
